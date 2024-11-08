@@ -128,7 +128,8 @@ The NOT predicate turns T into NIL, and NIL into T.
 It is helpful that the only way to say "no" in Lisp is NIL, everything else is treated as "yes."
 Examples:
 
-```      _______ 
+```
+	 _______ 
         |       |
  T----->|  NOT  |
         |       |-----> NIL
@@ -136,7 +137,8 @@ Examples:
 
 ```
 
-```      _______
+```
+	 _______
         |       |
  NIL--->|  NOT  |
         |       |----->	T
@@ -144,7 +146,8 @@ Examples:
 
 ```
 
-```      _______
+```
+	 _______
         |       |
  12---->|  NOT  |
         |       |----->	NIL
@@ -152,7 +155,8 @@ Examples:
 
 ```
 
-```       _______
+```
+	  _______
          |       |
 BRANDON->|  NOT  |
          |       |----->NIL
