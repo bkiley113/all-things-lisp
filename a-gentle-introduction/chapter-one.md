@@ -1,6 +1,8 @@
 # Chapter One of COMMON LISP: A Gentle Introduction to Symbolic Computation
 
 *What does this chapter entail?*
+- Arithmetic Functions: +, -, *, /, ABS, SQRT
+- Predicates: NUMBERP, SYMBOLP, ZEROP, ODDP, EVENP, >, <, EQUAL, NOT
 
 ## 1.2: Functions on Numbers
 
