@@ -161,3 +161,46 @@ BRANDON->|  NOT  |
 ```
 
 ### NEGATING A PREDICATE
+
+The NOT predicate can be combined with other predicates to create more complex behavior.
+
+```
+                    NOT-EQUAL:
+        _________________________________
+       |      _______           _______  |
+    -------->|       |   NIL   |       | |  NIL
+       |     | EQUAL |-------->|  NOT  |-------->
+    -------->|       |    T    |       | |   T
+       |      -------           -------  |
+        ---------------------------------
+```
+
+
+### NUMBER OF INPUTS TO A FUNCTION
+
+Some functions like ODDP, EVENP, ONEP, etc. require exactly ONE input.
+
+Some like EQUAL require two.
+
+Many accept variable numbers of inputs: the arithmetic functions +, -, *, and / accept any number of inputs.
+
+
+*What happens with single inputs for a function?*
+
+```
+      1-Input Subtraction
+	_____
+  4 -->|  -  |--> -4
+   	-----
+
+```
+
+### BASIC ERROR TYPES
+
+/ cannot divide by zero.
+
+EQUAL requires no fewer than two inputs.
+
+ODDP requires no more than one input.
+
+Can you think of some more examples?
