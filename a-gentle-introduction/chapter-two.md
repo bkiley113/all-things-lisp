@@ -138,3 +138,26 @@ Nested Example:
      A ---->|      |
 (B C D)---->| CONS |---> (A B C D)
              ------
+```
+The CONS function can be viewed as adding a new cons cell of the first input onto its second input, a list.
+
+We can create new lists from scratch using the CONS function.
+
+If input 1 is FROB and input 2 is NIL, then we will have preprended FROB as a cons cell to NIL, effectively producing (FROB) which has the standard cons cell structure (the CAR is FROB and the CDR is NIL)!. This is a single element list we have created using CONS.
+
+CONS works by prepending.
+
+## 2.13 LIST
+
+```
+             ______
+     FOO -->|      |
+     BAR -->| LIST |---> (FOO BAR BAZ)
+     BAZ -->|      |
+             ------
+```
+LIST allocates three new cons cells, one for each FOO BAR and BAZ.
+
+The CAR pointers of each cons cell is filled with FOO BAR and BAZ are all filled with their respective element neames, and then the CDR pointers point to the next element of the list with the final CDR pointer going to NIL.
+
+This follows the standard list structure we are familiar with. 
