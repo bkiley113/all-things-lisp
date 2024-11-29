@@ -2,7 +2,7 @@
 
 ### Exercise 3.9:
 
-![Ex 3.9](/.imgs/ex3_9.png)
+![Ex 3.9](./imgs/ex3_9.png)
 **Solution**
 
 Result 1:
