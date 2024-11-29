@@ -1,0 +1,35 @@
+##Here are a couple of exercises I found interesting from Ch. 3.
+
+### Exercise 3.9:
+
+![Ex 3.9](/.imgs/ex3_9.png)
+**Solution**
+
+Result 1:
+```
+(cons 5 (list 6 7))  => (5 6 7)
+```
+
+Result 2:
+```
+(cons 5 '(list 6 7))  => (5 (list 6 7)) 
+```
+
+Result 3:
+```
+(list 3 'from 9 'gives (- 9 3)) =>(3 from 9 gives 6)
+```
+
+Result 4:
+```
+(+ (length '(1 foo 2 moo))
+   (third '(1 foo 2 moo))
+
+=>
+
+(+ 4 2) => 6
+``
+
+Result 5:
+```
+(rest '(cons is short for construct)) => (is short for construct)

@@ -57,7 +57,7 @@ EGGPLANT => Error! EGGPLANT unassigned variable.
 
 ## 3.8 QUOTED OBJECTS AND SYMBOLS/LISTS AS DATA
 
-Try to reason through these examples, they are fairly self-explanatory. 
+Reason through these examples, they are fairly self-explanatory. 
 
 ```
 (equal kirk spock)   => Error! KIRK unassigned variable.
@@ -74,5 +74,26 @@ Try to reason through these examples, they are fairly self-explanatory.
 A quoted object evaluates to the object itself without the quote.
 
 
+## 3.9 MISQUOTING
 
- 
+Here are some common examples of misquoting that may make life difficult for early programmers.
+
+1. Missing Nested List Quote
+```
+(cons 'a (b c))  => Error! 'b' undefined function.
+(cons 'a '(b c)) => (a b c)
+
+```
+
+2. Ill-Placed Quote - Type Error
+```
+(+ 10 '(- 5 2)) => Error! Wrong type to input to '+'.
+(+ 10  (- 5 2)) => 13
+```
+
+3. Ill-Placed Quote - Logic Error
+```
+(list 'buy '(* 27 34) 'bagels) => (buy (* 27 34) bagels)
+
+(list 'buy  (* 27 34) 'bagels) => (by 918 bagels)
+```
