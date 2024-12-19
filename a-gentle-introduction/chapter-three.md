@@ -95,5 +95,5 @@ Here are some common examples of misquoting that may make life difficult for ear
 ```
 (list 'buy '(* 27 34) 'bagels) => (buy (* 27 34) bagels)
 
-(list 'buy  (* 27 34) 'bagels) => (by 918 bagels)
+(list 'buy  (* 27 34) 'bagels) => (buy 918 bagels)
 ```
